@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-8 bg-success mx-auto p-4" id="mainDiv">
+          <form>
+            <h2 class="text-white text-center mb-4">Discount Caculator by FARID</h2>
+            <div class="row mb-3">
+              <label for="" class="col-sm-4 text-white">Total Amount</label>
+              <div class="col-sm-8">
+                <input type="number" placeholder="Enter total amount" class="form-control text-center" id="totalAmount" />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="" class="col-sm-4 text-white">Discount type</label>
+              <div class="col-sm-8">
+                <select name="" id="dis_type" class="form-control text-center">
+                  <option value="" selected disabled>Select Discount Type</option>
+                  <option value="fixed">Fixed</option>
+                  <option value="percent">Percentage</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="" class="col-sm-4 text-white" id="dLabel">Discount Amount</label>
+              <div class="col-sm-8">
+                <input type="number" placeholder="Enter Discount amount" class="form-control text-center" id="discountAmount" />
+              </div>
+            </div>
+
+            <div class="row mb-3 d-none" id="total_discount">
+              <label for="" class="col-sm-4 text-white"> Total Discount</label>
+              <div class="col-sm-8">
+                <input type="number" placeholder="Here show total discount" class="form-control text-center" id="t_discountAmount" disabled />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="" class="col-sm-4 text-white">Payable Amount</label>
+              <div class="col-sm-8">
+                <input type="number" placeholder="Here show payable amount" class="text-center form-control" disabled id="total" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="btn-group">
+                <button class="btn btn-danger" id="calculate">Calculate</button>
+                <button class="btn btn-light" id="reset" type="reset">Reset</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
